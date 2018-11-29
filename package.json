@@ -1,0 +1,27 @@
+{
+  "name": "@cucumber-e2e/credential-manager",
+  "version": "0.0.1",
+  "description": "Credential manager for @cucumber-e2e framework",
+  "main": "index.js",
+  "scripts": {
+    "docs": "jsdoc ./src/ -r -t ./node_modules/minami",
+    "test": "jest"
+  },
+  "keywords": [
+    "cucumber",
+    "protractor",
+    "automation",
+    "credentials"
+  ],
+  "author": "Alexander Galichenko",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "jsdoc": "^3.5.5",
+    "minami": "^1.2.3"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "request-promise": "^4.2.2"
+  }
+}
