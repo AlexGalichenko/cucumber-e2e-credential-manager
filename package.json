@@ -1,6 +1,6 @@
 {
   "name": "@cucumber-e2e/credential-manager",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Credential manager for @cucumber-e2e framework",
   "main": "index.js",
   "scripts": {

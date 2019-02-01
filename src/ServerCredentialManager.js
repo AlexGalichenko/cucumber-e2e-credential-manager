@@ -86,14 +86,13 @@ class ServerCredentialManager {
 
     /**
      * Free credentials
-     * @param pool - pool where to find user to free
      * @throws {Error}
      * @example CredentialManager.freeCredentials();
      */
-    static freeCredentials(pool) {
+    static freeCredentials() {
         let requestURI = this.serviceUrl || defaultUrl;
         if (this.pool) {
-            requestURI += "?pool=" + pool;
+            requestURI += "?pool=" + this.pool;
         }
         return this.credentials.then(credentials => {
             if (credentials) {
@@ -116,15 +115,14 @@ class ServerCredentialManager {
      * Free credentials
      * @param property - property to update
      * @param value - value to update
-     * @param [pool] - pool to update
      * @throws {Error}
      * @example CredentialManager.updateProperty("cookie", "myCookie");
      */
-    static updateProperty(property, value, pool) {
+    static updateProperty(property, value) {
         const url = this.serviceUrl || defaultUrl;
         let requestURI = url + "/update";
-        if (pool) {
-            requestURI += "?pool=" + pool;
+        if (this.pool) {
+            requestURI += "?pool=" + this.pool;
         }
         return this.credentials.then(credentials => {
             if (credentials) {
