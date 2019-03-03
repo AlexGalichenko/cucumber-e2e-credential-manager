@@ -1,1 +1,1 @@
-module.exports = require('./src/ServerCredentialManager');
+module.exports = require('./lib/ServerCredentialManager');
