@@ -1,4 +1,4 @@
-const CredentialManager = require("../src/ServerCredentialManager");
+const CredentialManager = require("../lib/ServerCredentialManager");
 
 beforeAll(async () => {
     await CredentialManager.start();
