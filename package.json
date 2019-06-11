@@ -1,6 +1,6 @@
 {
   "name": "@cucumber-e2e/credential-manager",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Credential manager for @cucumber-e2e framework",
   "main": "index.js",
   "scripts": {
@@ -41,8 +41,8 @@
   "author": "Alexander Galichenko",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^23.6.0",
-    "jsdoc": "^3.5.5",
+    "jest": "^24.8.0",
+    "jsdoc": "^3.6.2",
     "minami": "^1.2.3",
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
